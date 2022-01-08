@@ -72,4 +72,17 @@ not_id char(8),
 ders_adi varchar(40),
 yazili_not int,
 constraint notlar foreign key (not_id)
-references talebeler(id) on delete cascade);
+references talebeler(id) on delete cascade);-- on delete cascade parent silinince chldekilerde silinir bagliyouz
+
+INSERT INTO notlar VALUES ('123','kimya',75);
+    INSERT INTO notlar VALUES ('124', 'fizik',65);
+    INSERT INTO notlar VALUES ('125', 'tarih',90);
+    INSERT INTO notlar VALUES ('126', 'Matematik',90);
+    
+    
+    
+    select * from talebeler;
+    
+    select * from notlar;
+    
+    select * from talebeler,notlar where talebeler.id = notlar.not_id;
