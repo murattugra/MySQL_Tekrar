@@ -173,4 +173,14 @@ where maas like '%00';
   ORNEK17:  maaşı 4000 olmayanları listeleyiniz
  -----------------------------------------------------------------------------*/ 
  
+ select * from personel
+ where maas not like '4000';
+ 
+  /* -----------------------------------------------------------------------------
+  ORNEK19: maaşının  5 haneli olmayanları listeleyiniz
+ -----------------------------------------------------------------------------*/   
+ select * from personel
+ where maas not like '_____';
+ 
+ 
  
